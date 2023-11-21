@@ -2,7 +2,147 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8"><!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 98vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .left {
+            width: 60%;
+            height: 100vh;
+            background: #fff;
+            padding: 30px 100px;
+            box-sizing: border-box;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            width: 30%;
+            height: 100vh;
+            background: #fff;
+            padding: 30px 100px;
+            box-sizing: border-box;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left .cityName {
+            margin: 0;
+            padding: 0 0 20px;
+            font-weight: 600;
+            font-size: 100px;
+            color: rgb(0, 0, 102);
+        }
+
+        .left span {
+            font-size: 20px;
+            color: #333;
+            line-height: 30px;
+        }
+
+        .left span b {
+            color: #000;
+        }
+
+        .right img {
+            width: 700px;
+        }
+        .datas {
+            width: 100vw;
+            /* height: 50vh; */
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 50px; */
+            /* border: 1px solid black; */
+        }
+        .datacard {
+            width: auto;
+            height: 30vh;
+            border: 1px solid rgb(0, 0, 102);
+            border-radius: 20px;
+            margin: auto 10px;
+            padding: 3vh;
+        }
+        /* .datacard p {
+
+        } */
+        .datacard .data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .data h1 {
+            font-size: 50px;
+            font-weight: 600;
+            color: rgb(0, 0, 102);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h1 class="cityName">Krishnagar</h1>
+            <!-- <span><b>Types of waste collected</b>: 12 <br>
+            <b>Waste Recycled</b>: 630 Kg <br>
+            <b>Waste left</b>: 509kg</span> -->
+            <div class="datas">
+                <div class="datacard typeWaste">
+                    <p>Types of waste collected (last month)</p>
+                    <div class="data">
+                        <h1>13</h1>
+                    </div>
+                </div>
+                <div class="datacard recycledWaste">
+                    <p>Recycled waste (last month)</p>
+                    <div class="data">
+                        <h1>236 KG</h1>
+                    </div>
+                </div>
+                <div class="datacard leftWaste">
+                    <p>Left to recycle (last month)</p>
+                    <div class="data">
+                        <h1>139 KG</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="analytics.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analytics</title>
     <style>
